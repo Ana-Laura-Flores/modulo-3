@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/a47af75b49.js" crossorigin="anonymous"></script>
+
     <!-- tailwind cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -12,48 +15,59 @@
 <body>
     <header>
         <nav class="w-screen h-20 bg-slate-950  ">
-            <ul class="flex items-center justify-end mr-24	">
-                <li class="m-5 font-bold text-white hover:text-green-500 ">
+            <div class="container flex w-screen items-center justify-center px-10">
+                <div class="img-container w-1/2">
+                    <img class="w-32 h-15"src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_White.png" alt="logo spotify">
+                </div>
+            <div class="nav-burguer w-1/2 flex justify-end lg:hidden">
+                <i class="fas fa-bars text-white text-4xl flex justify-end items-center	 p-5"></i>
+
+            </div>
+            <ul class="flex items-center justify-end w-4/5 hidden lg:flex	">
+                <li class="p-5 font-bold text-white hover:text-green-500 ">
                     <a href="#">Premium</a>
                 </li>
-                <li class="m-5 font-bold text-white hover:text-green-500 ">
+                <li class="p-5 font-bold text-white hover:text-green-500 ">
                     <a href="#">Suport</a>
                 </li>
-                <li class="m-5 font-bold text-white hover:text-green-500">
+                <li class="p-5 font-bold text-white hover:text-green-500">
                     <a href="#">Download</a>
                 </li>
-                <li class="m-5 text-white hover:text-green-500 ">
+                <li class="p-5 text-white hover:text-green-500 ">
                     <a href="#">Sign Up</a>
                 </li>
-                <li class="m-5 text-white hover:text-green-500">
+                <li class="p-5 text-white hover:text-green-500">
                     <a href="#">Log in</a>
                 </li>
             </ul>
+        </div>
         </nav>
         <main>
-            <section class="event flex flex-col justify-center  bg-blue-500 w-screen h-[30rem]	">
-                <article class="pl-24 p-24	">
-                    <h2 class="text-white font-bold text-[2.5rem] my-5">Get Premium free for 1 month</h2>
-                    <h3 class="text-white text-2xl my-5	">Only $9.99/month after. Cancel anytime.</h3>
-                    <div class="keypad flex ">
-                        <button class="btn w-40 h-12 rounded-3xl bg-slate-950 font-bold text-base text-white p-1.5	m-2	my-3 hover:scale-105	">GET STARTED</button>
-                        <button class="btn w-40 h-12 rounded-3xl border-solid border-white border-2 font-bold text-white p-1.5 m-2 my-3 hover:scale-105	">VIEW PLANS</button>
+            <section class="event flex flex-col justify-center bg-blue-500 w-screen h-[30rem]	">
+                <article class="p-7 lg:pl-24 lg:px-24	">
+                    <h2 class="text-white font-bold text-2xl lg:text-4xl my-5">Get Premium free for 1 month</h2>
+                    <h3 class="text-white text-lg my-5 lg:text-xl	">Only $9.99/month after. Cancel anytime.</h3>
+                    <div class="keypad flex flex-col justify-center lg:justify-start lg:flex-row  ">
+                        <button class="btn w-3/4 lg:w-52 h-12 rounded-3xl bg-slate-950 font-bold text-base text-white p-1.5	m-2	my-3 hover:scale-105	">GET STARTED</button>
+                        <button class="btn w-3/4 lg:w-52 h-12 rounded-3xl border-solid border-white border-2 font-bold text-white p-1.5 m-2 my-3 hover:scale-105	">VIEW PLANS</button>
                     </div>
-                    <p class="text-white my-7 text-xs"> <span class="underline decoration-solid">Terms and conditions apply.</span>  1 month free not available for users who have already tried Premium.</p>
+                    <div class="parrafo w-3/4" >
+                        <p class="text-white my-7 text-xs"> <span class="underline decoration-solid">Terms and conditions apply.</span>  1 month free not available for users who have already tried Premium.</p>
+                    </div>
                 </article>
               </section>
               <section class="why w-screen h-auto p-8 ">
                   <article>
-                      <h3 class="font-bold text-black text-5xl text-center p-8">Why go Premium?</h3>
-                      <ul>
-                          <li class="flex">
+                      <h3 class="font-bold text-black text-3xl lg:text-5xl text-center p-5">Why go Premium?</h3>
+                      <ul class="flex flex-col lg:flex-row">
+                          <li class="flex lg:flex-row lg:w-1/4">
                               <div class="w-36 h-36 mt-5 bg-[url('https://i.scdn.co/image/ab671c3d0000f43009302fbaf6259b4c117c704f')] bg-no-repeat bg-contain bg-center"></div>
                               <div class="flex flex-col justify-center p-5">
                                   <p class="font-bold text-2xl">Download music.</p>
                                   <p class="text">Listen anywhere.</p>
                               </div>
                           </li>
-                          <li class="flex">
+                          <li class="flex lg:flex-row lg:w-1/4">
                             <div class="w-36 h-36 mt-5 bg-[url('https://i.scdn.co/image/ab671c3d0000f43098292b95d24a697c20df5137')] bg-no-repeat bg-contain bg-center"></div>
                             <div class="flex flex-col justify-center p-5">
                                 <p class="font-bold text-2xl">Ad-free music listening.</p>
@@ -61,14 +75,14 @@
                             </div>
                            
                         </li>
-                        <li class="flex">
+                        <li class="flex lg:flex-row lg:w-1/4">
                             <div class="w-36 h-36 mt-5 bg-[url('https://i.scdn.co/image/ab671c3d0000f4306998d3ffd58aad6da6afdf67')] bg-no-repeat bg-contain bg-center"></div>
                             <div class="flex flex-col justify-center p-5">
                                 <p class="font-bold text-2xl">Play any song.</p>
                                 <p class="text">Even on mobile.</p>
                             </div>
                         </li>
-                        <li class="flex">
+                        <li class="flex lg:flex-row lg:w-1/4">
                             <div class="w-36 h-36 mt-5 bg-[url('https://i.scdn.co/image/ab671c3d0000f430cd6c528745e510c5be63a012')] bg-no-repeat bg-contain bg-center"></div>
                             <div class="flex flex-col justify-center p-5">
                                 <p class="font-bold text-2xl">Unlimited skips.</p>
@@ -80,11 +94,11 @@
               </section>
         </main>
         <section class="pick w-screen h-auto bg-gray-200	">
-            <h4 class="font-bold text-black text-5xl text-center pt-10">Pick your Premium</h4>
-            <p class="text-black text-base text-center pt-5">Listen without limits on your phone, speaker, and other devices.
+            <h4 class="font-bold text-black text-3xl lg:text-5xl text-center pt-10">Pick your Premium</h4>
+            <p class="text-black text-sm lg:text-base text-center pt-5">Listen without limits on your phone, speaker, and other devices.
             </p>
             <article class="plans flex flex-col items-center">
-                <ul class="flex items-center justify-center mt-3 mb-3 ">
+                <ul class="flex items-center justify-center mt-3 mb-8 ">
                     <li class="w-10 h-5 px-2 bg-auto bg-no-repeat bg-[url('https://content-tooling.spotifycdn.com/images/c870a1e1-f980-4626-ab1b-14eeb8d4cab4_visa.svg')] "></li>
                     <li class="w-10 h-5 px-2 bg-auto bg-no-repeat bg-[url('https://content-tooling.spotifycdn.com/images/e5ebed70-82ea-42ae-917d-b3edb7ed98ef_mastercard.svg')] "></li>
                     <li class="w-10 h-5 px-2 bg-auto bg-no-repeat bg-[url('https://content-tooling.spotifycdn.com/images/3fcc3442-3a00-455f-9256-d3115ac3e382_amex.svg')] "></li>
@@ -92,22 +106,67 @@
                     <li class="w-10 h-5 px-2 bg-cover bg-no-repeat bg-[url('https://i.scdn.co/image/ab671c3d0000f4300e2f169bed4bb2798accb287')] "></li>
             
                 </ul>
-                <div class="flex flex-col p-8 w-90 rounded-2xl bg-white drop-shadow-lg hover:scale-105 justify-center">
-                    <div class="flex items-center w-28 h-5 mt-3 p-3 rounded-md bg-blue-600">
+                <div class="flex flex-col p-8 w-4/5 sm:max-w-sm rounded-2xl bg-white drop-shadow-lg hover:scale-105 justify-center">
+                    <div class="flex lg:grid-cols-4 items-center w-28 h-5 mt-2 p-3 rounded-md bg-blue-600">
                        <p class="text-white text-sm">1 month free</p>
                     </div>
-                    <h4 class="text-2xl text-[#373737] font-bold mt-4 ">Individual</h4>
-                    <p class="text-sm mt-3">$9.99/month after offer period</p>
-                    <p class="text-sm mt-3">1 account</p>
+                    <h4 class="text-2xl text-[#373737] font-bold mt-2 ">Individual</h4>
+                    <p class="text-sm mt-2">$9.99/month after offer period</p>
+                    <p class="text-sm mt-2">1 account</p>
                     <div class="options mt-5">
                         <ul>
-                            <li>Ad-free music listening</li>
-                            <li>Play anywhere - even offline</li>
-                            <li>On-demand playback</li>
+                            <div class="flex h-10 items-center">
+                                <i class="fas fa-check pr-5 text-2xl"></i>
+                                <li class="">Ad-free music listening</li>
+                            </div>
+                            <div class="flex h-10 items-center">
+                                <i class="fas fa-check pr-5 text-2xl"></i>
+                                <li class="mt-3">Play anywhere - even offline</li>
+                            </div>
+                            <div class="flex h-10 items-center">
+                                <i class="fas fa-check pr-5 text-2xl"></i>
+                                <li class="mt-3">On-demand playback</li>
+                            </div>
                         </ul>
                     </div>
-                    <button class="w-[95%] my-4 h-12 font-bold text-base text-white bg-[#373737] rounded-full m-auto hover:scale-105 ">GET STARTED</button>
+                    <button class="w-[95%] mt-5 h-12 font-bold text-base text-white bg-[#373737] rounded-full m-auto hover:scale-105 ">GET STARTED</button>
+                    <div class="">
+                        <p class="text-black my-3 text-xs"> <span class="underline decoration-solid">Terms and conditions apply.</span>  1 month free not available for users who have already tried Premium.</p>
+                    </div>
                 </div>
+
+
+            <!-- <div class="cards">
+                <div class="flex flex-col p-8 w-4/5 sm:max-w-sm rounded-2xl bg-white drop-shadow-lg hover:scale-105 justify-center">
+                    <div class="flex lg:grid-cols-4 items-center w-28 h-5 mt-2 p-3 rounded-md bg-blue-600">
+                       <p class="text-white text-sm">1 month free</p>
+                    </div>
+                    <h4 class="text-2xl text-[#373737] font-bold mt-2 ">Individual</h4>
+                    <p class="text-sm mt-2">$9.99/month after offer period</p>
+                    <p class="text-sm mt-2">1 account</p>
+                    <div class="options mt-5">
+                        <ul>
+                            <div class="flex h-10 items-center">
+                                <i class="fas fa-check pr-5 text-2xl"></i>
+                                <li class="">Ad-free music listening</li>
+                            </div>
+                            <div class="flex h-10 items-center">
+                                <i class="fas fa-check pr-5 text-2xl"></i>
+                                <li class="mt-3">Play anywhere - even offline</li>
+                            </div>
+                            <div class="flex h-10 items-center">
+                                <i class="fas fa-check pr-5 text-2xl"></i>
+                                <li class="mt-3">On-demand playback</li>
+                            </div>
+                        </ul>
+                    </div>
+                    <button class="w-[95%] mt-5 h-12 font-bold text-base text-white bg-[#373737] rounded-full m-auto hover:scale-105 ">GET STARTED</button>
+                    <div class="">
+                        <p class="text-black my-3 text-xs"> <span class="underline decoration-solid">Terms and conditions apply.</span>  1 month free not available for users who have already tried Premium.</p>
+                    </div>
+                </div>
+            </div> -->
+
             </article>
           
         </section>

@@ -97,7 +97,7 @@
             <h4 class="font-bold text-black text-3xl lg:text-5xl text-center pt-10">Pick your Premium</h4>
             <p class="text-black text-sm lg:text-base text-center pt-5">Listen without limits on your phone, speaker, and other devices.
             </p>
-            <article class="plans flex flex-col items-center">
+            <article class="plans flex flex-col items-center ">
                 <ul class="flex items-center justify-center mt-3 mb-8 ">
                     <li class="w-10 h-5 px-2 bg-auto bg-no-repeat bg-[url('https://content-tooling.spotifycdn.com/images/c870a1e1-f980-4626-ab1b-14eeb8d4cab4_visa.svg')] "></li>
                     <li class="w-10 h-5 px-2 bg-auto bg-no-repeat bg-[url('https://content-tooling.spotifycdn.com/images/e5ebed70-82ea-42ae-917d-b3edb7ed98ef_mastercard.svg')] "></li>
@@ -106,8 +106,9 @@
                     <li class="w-10 h-5 px-2 bg-cover bg-no-repeat bg-[url('https://i.scdn.co/image/ab671c3d0000f4300e2f169bed4bb2798accb287')] "></li>
             
                 </ul>
-                <div class="flex flex-col p-8 w-4/5 sm:max-w-sm rounded-2xl bg-white drop-shadow-lg hover:scale-105 justify-center">
-                    <div class="flex lg:grid-cols-4 items-center w-28 h-5 mt-2 p-3 rounded-md bg-blue-600">
+                <div class="cards flex flex-col  items-stretch	 lg:flex lg:flex-row w-screen lg:justify-between lg:px-10	">
+                <div class="flex flex-col p-8 my-5 w-4/5 xl:w-[23%] lg:p-4 sm:max-w-sm rounded-2xl bg-white drop-shadow-lg hover:scale-105 justify-center">
+                    <div class="flex items-center w-28 h-5 mt-2 p-3 rounded-md bg-blue-600">
                        <p class="text-white text-sm">1 month free</p>
                     </div>
                     <h4 class="text-2xl text-[#373737] font-bold mt-2 ">Individual</h4>
@@ -115,16 +116,16 @@
                     <p class="text-sm mt-2">1 account</p>
                     <div class="options mt-5">
                         <ul>
-                            <div class="flex h-10 items-center">
-                                <i class="fas fa-check pr-5 text-2xl"></i>
-                                <li class="">Ad-free music listening</li>
+                            <div class="flex h-auto">
+                                <i class="mt-3 fas fa-check pr-5 text-2xl"></i>
+                                <li class="mt-3">Ad-free music listening</li>
                             </div>
-                            <div class="flex h-10 items-center">
-                                <i class="fas fa-check pr-5 text-2xl"></i>
+                            <div class="flex h-auto">
+                                <i class="mt-3 fas fa-check pr-5 text-2xl"></i>
                                 <li class="mt-3">Play anywhere - even offline</li>
                             </div>
-                            <div class="flex h-10 items-center">
-                                <i class="fas fa-check pr-5 text-2xl"></i>
+                            <div class="flex h-auto">
+                                <i class="mt-3 fas fa-check pr-5 text-2xl"></i>
                                 <li class="mt-3">On-demand playback</li>
                             </div>
                         </ul>
@@ -136,26 +137,91 @@
                 </div>
 
 
-            <!-- <div class="cards">
-                <div class="flex flex-col p-8 w-4/5 sm:max-w-sm rounded-2xl bg-white drop-shadow-lg hover:scale-105 justify-center">
-                    <div class="flex lg:grid-cols-4 items-center w-28 h-5 mt-2 p-3 rounded-md bg-blue-600">
+            
+                <div class="flex flex-col p-8 my-5 w-4/5 xl:w-[23%] rounded-2xl bg-white drop-shadow-lg hover:scale-105 justify-center">
+                    <div class="flex items-center w-28 h-5 mt-2 p-3 rounded-md bg-blue-600">
+                       <p class="text-white text-sm">1 month free</p>
+                    </div>
+                    <h4 class="text-2xl text-[#373737] font-bold mt-2 ">Duo</h4>
+                    <p class="text-sm mt-2">$12.99/month after offer period</p>
+                    <p class="text-sm mt-2">2 account</p>
+                    <div class="options mt-5">
+                        <ul>
+                            <div class="flex h-auto">
+                                <i class="mt-3 fas fa-check pr-5 text-2xl"></i>
+                                <li class="mt-3 ">2 Premium accounts for a couple under one roof</li>
+                            </div>
+                            <div class="flex h-auto">
+                                <i class="mt-3 fas fa-check pr-5 text-2xl"></i>
+                                <li class="mt-3">Ad-free music listening, play offline, on-demand playback</li>
+                            </div>
+                            <!-- <div class="flex h-10 items-center">
+                                <i class="fas fa-check pr-5 text-2xl"></i>
+                                <li class="mt-3">On-demand playback</li>
+                            </div> -->
+                        </ul>
+                    </div>
+                    <button class="w-[95%] mt-5 h-12 font-bold text-base text-white bg-[#373737] rounded-full m-auto hover:scale-105 ">GET STARTED</button>
+                    <div class="">
+                        <p class="text-black my-3 text-xs"> <span class="underline decoration-solid">Terms and conditions apply.</span>  1 month free not available for users who have already tried Premium.</p>
+                    </div>
+                </div>
+
+
+
+                <div class="flex flex-col p-8 my-5 w-4/5 h-auto xl:w-[23%] rounded-2xl bg-white drop-shadow-lg hover:scale-105 justify-center">
+                    <div class="flex items-center w-28 h-5 mt-2 p-3 rounded-md bg-blue-600">
+                       <p class="text-white text-sm">1 month free</p>
+                    </div>
+                    <h4 class="text-2xl text-[#373737] font-bold mt-2 ">Family</h4>
+                    <p class="text-sm mt-2">$15.99/month after offer period</p>
+                    <p class="text-sm mt-2">6 account</p>
+                    <div class="options mt-5">
+                        <ul>
+                            <div class="flex h-auto">
+                                <i class="fas fa-check pr-5 text-2xl"></i>
+                                <li class="">6 Premium accounts for family members living under one roof</li>
+                            </div>
+                            <div class="flex h-auto">
+                                <i class="mt-3 fas fa-check pr-5 text-2xl"></i>
+                                <li class="mt-3">Block explicit music</li>
+                            </div>
+                            <div class="flex h-auto">
+                                <i class="mt-3 fas fa-check pr-5 text-2xl"></i>
+                                <li class="mt-3">Ad-free music listening, play offline, on-demand playback</li>
+                            </div>
+                            <div class="flex h-auto">
+                                <i class="mt-3 fas fa-check pr-5 text-2xl"></i>
+                                <li class="mt-3">Spotify Kids: a separate app made just for kids</li>
+                            </div>
+                        </ul>
+                    </div>
+                    <button class="w-[95%] mt-5 h-12 font-bold text-base text-white bg-[#373737] rounded-full m-auto hover:scale-105 ">GET STARTED</button>
+                    <div class="">
+                        <p class="text-black my-3 text-xs"> <span class="underline decoration-solid">Terms and conditions apply.</span>  1 month free not available for users who have already tried Premium.</p>
+                    </div>
+                </div>
+
+
+                <div class="flex flex-col p-8 my-5 w-4/5 xl:w-[23%] rounded-2xl bg-white drop-shadow-lg hover:scale-105 justify-center">
+                    <div class="flex items-center w-28 h-5 mt-2 p-3 rounded-md bg-blue-600">
                        <p class="text-white text-sm">1 month free</p>
                     </div>
                     <h4 class="text-2xl text-[#373737] font-bold mt-2 ">Individual</h4>
                     <p class="text-sm mt-2">$9.99/month after offer period</p>
                     <p class="text-sm mt-2">1 account</p>
-                    <div class="options mt-5">
+                    <div class="options mt-5 h-auto">
                         <ul>
-                            <div class="flex h-10 items-center">
-                                <i class="fas fa-check pr-5 text-2xl"></i>
-                                <li class="">Ad-free music listening</li>
+                            <div class="flex h-auto">
+                                <i class="mt-3 fas fa-check pr-5 text-2xl"></i>
+                                <li class="mt-3">Ad-free music listening</li>
                             </div>
-                            <div class="flex h-10 items-center">
-                                <i class="fas fa-check pr-5 text-2xl"></i>
+                            <div class="flex h-auto">
+                                <i class="mt-3 fas fa-check pr-5 text-2xl"></i>
                                 <li class="mt-3">Play anywhere - even offline</li>
                             </div>
-                            <div class="flex h-10 items-center">
-                                <i class="fas fa-check pr-5 text-2xl"></i>
+                            <div class="flex h-auto">
+                                <i class="mt-3 fas fa-check pr-5 text-2xl"></i>
                                 <li class="mt-3">On-demand playback</li>
                             </div>
                         </ul>
@@ -165,7 +231,7 @@
                         <p class="text-black my-3 text-xs"> <span class="underline decoration-solid">Terms and conditions apply.</span>  1 month free not available for users who have already tried Premium.</p>
                     </div>
                 </div>
-            </div> -->
+            </div> 
 
             </article>
           
